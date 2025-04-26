@@ -1,4 +1,4 @@
-# NOTE: remove .2 when using file
+# NOTE: remove .2 when using
 
 unbind r
 bind r source-file ~/.tmux.conf
@@ -21,9 +21,14 @@ bind -r C-k resize-pane -U 15
 bind -r C-h resize-pane -L 15
 bind -r C-l resize-pane -R 15
 
-
 set -g status-style bg=default,fg=white
 set -g status-position top
-set -g status-right ''
-
 set -g window-status-current-style fg=green
+
+set -g @plugin 'tmux-plugins/tmp'
+set -g @plugin 'tmux-plugins/tmux-cpu'
+
+set -g status-right 'CPU:#{cpu_percentage} | RAM:#{ram_percentage}'
+
+# Run plugin manager
+run '~/.tmux/plugins/tpm/tpm'
