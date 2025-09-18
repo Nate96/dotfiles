@@ -1,0 +1,16 @@
+# Refresh config
+# Linux: Press Ctrl+Shift+, 
+# macOS: Press Cmd+Shift+, 
+
+#font-size=12
+#font-family="OpenDyslexicM Nerd Font Mono"
+
+cursor-style-blink=true
+
+background-opacity=0.8
+background="black"
+background-blur=true
+
+shell-integration-features=no-cursor
+cursor-style=block
+cursor-opacity=1
