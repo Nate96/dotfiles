@@ -102,4 +102,5 @@ alias nv="nvim"
 
 alias confghost=""
 alias confzsh="nvim ~/.zshrc"
+alias conftmux="nvim ~/.tmux.conf"
 
