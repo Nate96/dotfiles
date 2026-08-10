@@ -66,14 +66,24 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-alias p="Python3"
-alias confghost="nvim ~/Library/Application\ Support/com.mitchellh.ghostty/config"
-alias confzsh="nvim ~/.zshrc"
-alias nv="nvim"
-alias tt='uv run /Users/nbraukhoff/time-tracker/tt.py'
-alias tt='uv run /Users/nbraukhoff/time-tracker/tt.py'
+# MAC
+alias confghost="nvim ~/Library/Application\ Support/com.mitchellh.ghostty/config"  
 
-alias testy="fd | entr pytest"
-alias ftest="make test && make format"
+# Linux
+alias confghost="nvim ~/.config/ghost/config"
+
+alias confzsh="nvim ~/.zshrc"
+
+alias p="Python3"
 alias lg="lazygit"
-alias prr='copilot --allow-all-tools -p "Could you please perform a comprehensive PR review for the current branch? Please check code quality, logic, potential bugs, and also double-check spelling and grammar in comments and documentation. Thank you!"'
+alias hl="hledger"
+alias wthr='curl wttr.in/?u'
+alias so='source'
+
+alias nv="nvim"
+alias ndiff="nvim -c CodeDiff"
+alias mdiff="nvim -c 'CodeDiff main'"
+
+alias tt='{path-to-tt-projct}'
+
+export LEDGER_FILE="{path-to-ledger-file}"
